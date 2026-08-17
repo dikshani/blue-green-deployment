@@ -406,7 +406,15 @@ Shows production traffic being served by the Green environment.
 
 ---
 
-## 7. Blue-Green Deployment
+## 7. Blue Production Traffic / Rollback
+
+Shows production traffic switched back to the Blue environment.
+
+![Blue Production Traffic](screenshots/blue-production-traffic.png)
+
+---
+
+## 8. Blue-Green Deployment
 
 Shows the automated deployment script switching traffic between environments.
 
@@ -414,19 +422,11 @@ Shows the automated deployment script switching traffic between environments.
 
 ---
 
-## 8. Nginx Configuration
+## 9. Nginx Configuration
 
 Shows the Nginx reverse proxy configuration pointing production traffic to an environment.
 
 ![Nginx Configuration](screenshots/nginx-configuration.png)
-
----
-
-## 9. Blue Production Traffic / Rollback
-
-Shows production traffic switched back to the Blue environment.
-
-![Blue Production Traffic](screenshots/blue-production-traffic.png)
 
 ---
 
@@ -538,3 +538,6 @@ A new application version is deployed in a separate Docker container, tested usi
 The previous environment remains available, making rollback fast and reducing deployment risk.
 
 The project satisfies the core Blue-Green Deployment requirement by deploying the next application version separately and switching traffic only after the new version is ready.
+
+
+https://roadmap.sh/projects/blue-green-deployment
